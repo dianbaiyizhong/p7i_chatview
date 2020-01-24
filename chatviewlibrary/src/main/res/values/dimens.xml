@@ -1,0 +1,5 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="chat_title_bar_txt_size">20sp</dimen>
+
+</resources>

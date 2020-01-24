@@ -1,0 +1,55 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 28
+    buildToolsVersion "28.0.3"
+
+    defaultConfig {
+        minSdkVersion 14
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+        vectorDrawables.useSupportLibrary = true
+        multiDexEnabled true
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+}
+
+dependencies {
+    implementation rootProject.ext.dependencies["constraintlayout"]
+    implementation 'androidx.vectordrawable:vectordrawable:1.0.0'
+    implementation rootProject.ext.dependencies["appcompat"]
+    implementation rootProject.ext.dependencies["material"]
+
+//    implementation fileTree(dir: "libs", include: ["*.jar"])
+
+    api('cn.leancloud:realtime-android:6.1.7') {
+        exclude group: 'cn.leancloud', module: 'realtime-core'
+    }
+    api('cn.leancloud:realtime-core:6.1.7') {
+        exclude group: 'com.alibaba', module: 'fastjson'
+        exclude group: 'org.ligboy.retrofit2', module: 'converter-fastjson'
+    }
+    implementation rootProject.ext.dependencies["rxandroid"]
+    implementation rootProject.ext.dependencies["fastjson"]
+    implementation 'org.ligboy.retrofit2:converter-fastjson-android:2.1.0'
+
+    implementation rootProject.ext.dependencies["recyclerview"]
+    implementation 'com.github.stuxuhai:jpinyin:1.0'
+
+    compileOnly('com.squareup.picasso:picasso:2.5.2')
+
+
+    implementation rootProject.ext.dependencies["eventbus"]
+
+    implementation rootProject.ext.dependencies["utilcodex"]
+
+//    implementation project(':p7i_ui')
+//    compileOnly project(':p7i_common')
+
+
+
+}

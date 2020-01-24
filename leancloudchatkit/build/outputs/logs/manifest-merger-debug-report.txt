@@ -1,0 +1,135 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\Users\zhenmei\Documents\project\p7i_chatview\leancloudchatkit\src\main\AndroidManifest.xml:2:1-48:12
+INJECTED from C:\Users\zhenmei\Documents\project\p7i_chatview\leancloudchatkit\src\main\AndroidManifest.xml:2:1-48:12
+INJECTED from C:\Users\zhenmei\Documents\project\p7i_chatview\leancloudchatkit\src\main\AndroidManifest.xml:2:1-48:12
+INJECTED from C:\Users\zhenmei\Documents\project\p7i_chatview\leancloudchatkit\src\main\AndroidManifest.xml:2:1-48:12
+INJECTED from C:\Users\zhenmei\Documents\project\p7i_chatview\leancloudchatkit\src\main\AndroidManifest.xml:2:1-48:12
+INJECTED from C:\Users\zhenmei\Documents\project\p7i_chatview\leancloudchatkit\src\main\AndroidManifest.xml:2:1-48:12
+INJECTED from C:\Users\zhenmei\Documents\project\p7i_chatview\leancloudchatkit\src\main\AndroidManifest.xml:2:1-48:12
+	package
+		ADDED from C:\Users\zhenmei\Documents\project\p7i_chatview\leancloudchatkit\src\main\AndroidManifest.xml:3:5-35
+		INJECTED from C:\Users\zhenmei\Documents\project\p7i_chatview\leancloudchatkit\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\zhenmei\Documents\project\p7i_chatview\leancloudchatkit\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from C:\Users\zhenmei\Documents\project\p7i_chatview\leancloudchatkit\src\main\AndroidManifest.xml
+		ADDED from C:\Users\zhenmei\Documents\project\p7i_chatview\leancloudchatkit\src\main\AndroidManifest.xml:2:1-48:12
+		INJECTED from C:\Users\zhenmei\Documents\project\p7i_chatview\leancloudchatkit\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from C:\Users\zhenmei\Documents\project\p7i_chatview\leancloudchatkit\src\main\AndroidManifest.xml
+		ADDED from C:\Users\zhenmei\Documents\project\p7i_chatview\leancloudchatkit\src\main\AndroidManifest.xml:2:1-48:12
+		INJECTED from C:\Users\zhenmei\Documents\project\p7i_chatview\leancloudchatkit\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\Users\zhenmei\Documents\project\p7i_chatview\leancloudchatkit\src\main\AndroidManifest.xml:2:11-69
+uses-permission#android.permission.INTERNET
+ADDED from C:\Users\zhenmei\Documents\project\p7i_chatview\leancloudchatkit\src\main\AndroidManifest.xml:5:5-67
+	android:name
+		ADDED from C:\Users\zhenmei\Documents\project\p7i_chatview\leancloudchatkit\src\main\AndroidManifest.xml:5:22-64
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from C:\Users\zhenmei\Documents\project\p7i_chatview\leancloudchatkit\src\main\AndroidManifest.xml:6:5-81
+	android:name
+		ADDED from C:\Users\zhenmei\Documents\project\p7i_chatview\leancloudchatkit\src\main\AndroidManifest.xml:6:22-78
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from C:\Users\zhenmei\Documents\project\p7i_chatview\leancloudchatkit\src\main\AndroidManifest.xml:7:5-80
+	android:name
+		ADDED from C:\Users\zhenmei\Documents\project\p7i_chatview\leancloudchatkit\src\main\AndroidManifest.xml:7:22-77
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from C:\Users\zhenmei\Documents\project\p7i_chatview\leancloudchatkit\src\main\AndroidManifest.xml:8:5-79
+	android:name
+		ADDED from C:\Users\zhenmei\Documents\project\p7i_chatview\leancloudchatkit\src\main\AndroidManifest.xml:8:22-76
+uses-permission#android.permission.ACCESS_WIFI_STATE
+ADDED from C:\Users\zhenmei\Documents\project\p7i_chatview\leancloudchatkit\src\main\AndroidManifest.xml:9:5-76
+	android:name
+		ADDED from C:\Users\zhenmei\Documents\project\p7i_chatview\leancloudchatkit\src\main\AndroidManifest.xml:9:22-73
+uses-permission#android.permission.RECORD_AUDIO
+ADDED from C:\Users\zhenmei\Documents\project\p7i_chatview\leancloudchatkit\src\main\AndroidManifest.xml:10:5-71
+	android:name
+		ADDED from C:\Users\zhenmei\Documents\project\p7i_chatview\leancloudchatkit\src\main\AndroidManifest.xml:10:22-68
+uses-permission#android.permission.READ_PHONE_STATE
+ADDED from C:\Users\zhenmei\Documents\project\p7i_chatview\leancloudchatkit\src\main\AndroidManifest.xml:11:5-75
+	android:name
+		ADDED from C:\Users\zhenmei\Documents\project\p7i_chatview\leancloudchatkit\src\main\AndroidManifest.xml:11:22-72
+uses-permission#android.permission.RECEIVE_BOOT_COMPLETED
+ADDED from C:\Users\zhenmei\Documents\project\p7i_chatview\leancloudchatkit\src\main\AndroidManifest.xml:12:5-81
+	android:name
+		ADDED from C:\Users\zhenmei\Documents\project\p7i_chatview\leancloudchatkit\src\main\AndroidManifest.xml:12:22-78
+uses-permission#android.permission.VIBRATE
+ADDED from C:\Users\zhenmei\Documents\project\p7i_chatview\leancloudchatkit\src\main\AndroidManifest.xml:13:5-66
+	android:name
+		ADDED from C:\Users\zhenmei\Documents\project\p7i_chatview\leancloudchatkit\src\main\AndroidManifest.xml:13:22-63
+uses-feature#android.hardware.camera
+ADDED from C:\Users\zhenmei\Documents\project\p7i_chatview\leancloudchatkit\src\main\AndroidManifest.xml:15:5-17:35
+	android:required
+		ADDED from C:\Users\zhenmei\Documents\project\p7i_chatview\leancloudchatkit\src\main\AndroidManifest.xml:17:9-32
+	android:name
+		ADDED from C:\Users\zhenmei\Documents\project\p7i_chatview\leancloudchatkit\src\main\AndroidManifest.xml:16:9-47
+application
+ADDED from C:\Users\zhenmei\Documents\project\p7i_chatview\leancloudchatkit\src\main\AndroidManifest.xml:19:5-46:19
+activity#cn.leancloud.chatkit.activity.LCIMConversationActivity
+ADDED from C:\Users\zhenmei\Documents\project\p7i_chatview\leancloudchatkit\src\main\AndroidManifest.xml:20:9-28:20
+	android:launchMode
+		ADDED from C:\Users\zhenmei\Documents\project\p7i_chatview\leancloudchatkit\src\main\AndroidManifest.xml:22:13-44
+	android:name
+		ADDED from C:\Users\zhenmei\Documents\project\p7i_chatview\leancloudchatkit\src\main\AndroidManifest.xml:21:13-62
+intent-filter#action:name:cn.leancloud.chatkit.conversation_item_click_action+category:name:android.intent.category.DEFAULT
+ADDED from C:\Users\zhenmei\Documents\project\p7i_chatview\leancloudchatkit\src\main\AndroidManifest.xml:23:13-27:29
+action#cn.leancloud.chatkit.conversation_item_click_action
+ADDED from C:\Users\zhenmei\Documents\project\p7i_chatview\leancloudchatkit\src\main\AndroidManifest.xml:24:17-94
+	android:name
+		ADDED from C:\Users\zhenmei\Documents\project\p7i_chatview\leancloudchatkit\src\main\AndroidManifest.xml:24:25-91
+category#android.intent.category.DEFAULT
+ADDED from C:\Users\zhenmei\Documents\project\p7i_chatview\leancloudchatkit\src\main\AndroidManifest.xml:26:17-76
+	android:name
+		ADDED from C:\Users\zhenmei\Documents\project\p7i_chatview\leancloudchatkit\src\main\AndroidManifest.xml:26:27-73
+activity#cn.leancloud.chatkit.activity.LCIMImageActivity
+ADDED from C:\Users\zhenmei\Documents\project\p7i_chatview\leancloudchatkit\src\main\AndroidManifest.xml:29:9-64
+	android:name
+		ADDED from C:\Users\zhenmei\Documents\project\p7i_chatview\leancloudchatkit\src\main\AndroidManifest.xml:29:19-61
+activity#cn.leancloud.chatkit.activity.LCIMConversationSettingActivity
+ADDED from C:\Users\zhenmei\Documents\project\p7i_chatview\leancloudchatkit\src\main\AndroidManifest.xml:30:9-87
+	android:name
+		ADDED from C:\Users\zhenmei\Documents\project\p7i_chatview\leancloudchatkit\src\main\AndroidManifest.xml:30:19-75
+receiver#cn.leancloud.push.AVBroadcastReceiver
+ADDED from C:\Users\zhenmei\Documents\project\p7i_chatview\leancloudchatkit\src\main\AndroidManifest.xml:32:9-38:20
+	android:name
+		ADDED from C:\Users\zhenmei\Documents\project\p7i_chatview\leancloudchatkit\src\main\AndroidManifest.xml:32:19-71
+intent-filter#action:name:android.intent.action.BOOT_COMPLETED+action:name:android.intent.action.USER_PRESENT+action:name:android.net.conn.CONNECTIVITY_CHANGE
+ADDED from C:\Users\zhenmei\Documents\project\p7i_chatview\leancloudchatkit\src\main\AndroidManifest.xml:33:13-37:29
+action#android.intent.action.BOOT_COMPLETED
+ADDED from C:\Users\zhenmei\Documents\project\p7i_chatview\leancloudchatkit\src\main\AndroidManifest.xml:34:17-79
+	android:name
+		ADDED from C:\Users\zhenmei\Documents\project\p7i_chatview\leancloudchatkit\src\main\AndroidManifest.xml:34:25-76
+action#android.intent.action.USER_PRESENT
+ADDED from C:\Users\zhenmei\Documents\project\p7i_chatview\leancloudchatkit\src\main\AndroidManifest.xml:35:17-77
+	android:name
+		ADDED from C:\Users\zhenmei\Documents\project\p7i_chatview\leancloudchatkit\src\main\AndroidManifest.xml:35:25-74
+action#android.net.conn.CONNECTIVITY_CHANGE
+ADDED from C:\Users\zhenmei\Documents\project\p7i_chatview\leancloudchatkit\src\main\AndroidManifest.xml:36:17-79
+	android:name
+		ADDED from C:\Users\zhenmei\Documents\project\p7i_chatview\leancloudchatkit\src\main\AndroidManifest.xml:36:25-76
+activity#cn.leancloud.chatkit.activity.LCIMConversationDetailActivity
+ADDED from C:\Users\zhenmei\Documents\project\p7i_chatview\leancloudchatkit\src\main\AndroidManifest.xml:41:9-86
+	android:name
+		ADDED from C:\Users\zhenmei\Documents\project\p7i_chatview\leancloudchatkit\src\main\AndroidManifest.xml:41:19-74
+activity#cn.leancloud.chatkit.activity.LCIMUserSelectActivity
+ADDED from C:\Users\zhenmei\Documents\project\p7i_chatview\leancloudchatkit\src\main\AndroidManifest.xml:42:9-78
+	android:name
+		ADDED from C:\Users\zhenmei\Documents\project\p7i_chatview\leancloudchatkit\src\main\AndroidManifest.xml:42:19-66
+service#cn.leancloud.push.PushService
+ADDED from C:\Users\zhenmei\Documents\project\p7i_chatview\leancloudchatkit\src\main\AndroidManifest.xml:44:9-65
+	android:name
+		ADDED from C:\Users\zhenmei\Documents\project\p7i_chatview\leancloudchatkit\src\main\AndroidManifest.xml:44:18-62
+uses-sdk
+INJECTED from C:\Users\zhenmei\Documents\project\p7i_chatview\leancloudchatkit\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\zhenmei\Documents\project\p7i_chatview\leancloudchatkit\src\main\AndroidManifest.xml
+INJECTED from C:\Users\zhenmei\Documents\project\p7i_chatview\leancloudchatkit\src\main\AndroidManifest.xml
+INJECTED from C:\Users\zhenmei\Documents\project\p7i_chatview\leancloudchatkit\src\main\AndroidManifest.xml
+INJECTED from C:\Users\zhenmei\Documents\project\p7i_chatview\leancloudchatkit\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from C:\Users\zhenmei\Documents\project\p7i_chatview\leancloudchatkit\src\main\AndroidManifest.xml
+		ADDED from C:\Users\zhenmei\Documents\project\p7i_chatview\leancloudchatkit\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\zhenmei\Documents\project\p7i_chatview\leancloudchatkit\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\Users\zhenmei\Documents\project\p7i_chatview\leancloudchatkit\src\main\AndroidManifest.xml
+		ADDED from C:\Users\zhenmei\Documents\project\p7i_chatview\leancloudchatkit\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\zhenmei\Documents\project\p7i_chatview\leancloudchatkit\src\main\AndroidManifest.xml
