@@ -117,10 +117,10 @@ public class ChatActivity extends AppCompatActivity implements View.OnTouchListe
             getWindow().addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
         } else {
             //设置状态栏黑色字体与图标(只支持安卓5.0+，知乎也是这样)
-
             BarUtils.setStatusBarLightMode(this, true);
         }
         super.onCreate(savedInstanceState);
+        BarUtils.transparentStatusBar(getWindow());
         setContentView(R.layout.activity_chat_view);
         EventBus.getDefault().register(this);
         initView();
@@ -140,7 +140,6 @@ public class ChatActivity extends AppCompatActivity implements View.OnTouchListe
         /**
          * 获取参数
          */
-
         Bundle extras = getIntent().getExtras();
         if (null != extras) {
             if (extras.containsKey(LCIMConstants.PEER_ID)) {
