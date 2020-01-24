@@ -61,4 +61,7 @@ dependencies {
     implementation rootProject.ext.dependencies["RxKit"]
     //UI库
     implementation rootProject.ext.dependencies["RxUI"]
+
+    implementation rootProject.ext.dependencies["utilcodex"]
+
 }

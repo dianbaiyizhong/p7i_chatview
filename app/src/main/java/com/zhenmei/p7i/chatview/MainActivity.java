@@ -1,7 +1,9 @@
 package com.zhenmei.p7i.chatview;
 
+import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -9,12 +11,13 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
     private Button btn_single_talk;
-    private final String APP_ID = "##";
-    private final String APP_KEY = "##";
+    private final String APP_ID = "DhL9381c2cbJy8KR9O5J4yO3-9Nh9j0Va";
+    private final String APP_KEY = "QrM2CtTn8Ocq6vz1OxFEJ2OP";
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         LeanCloudApp.init(this, APP_ID, APP_KEY, "https://leancloud.p7ik4n.com");
