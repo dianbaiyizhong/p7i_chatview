@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="GradleMigrationSettings" migrationVersion="1" />
   <component name="GradleSettings">
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
@@ -10,6 +11,10 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/aurora_imui_chatinput" />
+            <option value="$PROJECT_DIR$/aurora_imui_messagelist" />
+            <option value="$PROJECT_DIR$/chatviewlibrary" />
+            <option value="$PROJECT_DIR$/leancloudchatkit" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

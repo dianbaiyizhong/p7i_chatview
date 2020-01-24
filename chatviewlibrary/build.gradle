@@ -1,0 +1,64 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.2"
+
+
+    defaultConfig {
+        minSdkVersion 21
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles 'consumer-rules.pro'
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+    implementation rootProject.ext.dependencies["appcompat"]
+    implementation rootProject.ext.dependencies["material"]
+
+    implementation rootProject.ext.dependencies["recyclerview"]
+
+
+    implementation project(":aurora_imui_chatinput")
+    implementation project(":aurora_imui_messagelist")
+    implementation project(':leancloudchatkit')
+    implementation('cn.leancloud:realtime-android:6.1.7') {
+        exclude group: 'cn.leancloud', module: 'realtime-core'
+    }
+    implementation('cn.leancloud:realtime-core:6.1.7') {
+        exclude group: 'com.alibaba', module: 'fastjson'
+        exclude group: 'org.ligboy.retrofit2', module: 'converter-fastjson'
+    }
+    implementation rootProject.ext.dependencies["rxandroid"]
+    implementation rootProject.ext.dependencies["fastjson"]
+    implementation 'org.ligboy.retrofit2:converter-fastjson-android:2.1.0'
+    implementation 'com.github.stuxuhai:jpinyin:1.0'
+    implementation rootProject.ext.dependencies["eventbus"]
+    implementation rootProject.ext.dependencies["glide"]
+
+
+    implementation rootProject.ext.dependencies["SmartRefreshLayout"]
+    implementation rootProject.ext.dependencies["SmartRefreshHeader"]
+
+
+    implementation rootProject.ext.dependencies["BaseRecyclerViewAdapterHelper"]
+    implementation rootProject.ext.dependencies["utilcodex"]
+    implementation rootProject.ext.dependencies["logger"]
+
+    //基础工具库
+    implementation rootProject.ext.dependencies["RxKit"]
+    //UI库
+    implementation rootProject.ext.dependencies["RxUI"]
+}

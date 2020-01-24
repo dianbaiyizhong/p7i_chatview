@@ -1,2 +1,3 @@
-rootProject.name='p7i_chatview'
-include ':app'
+rootProject.name = 'p7i_chatview'
+include ':app', ':leancloudchatkit', ':aurora_imui_chatinput', ':aurora_imui_messagelist'
+include ':chatviewlibrary'

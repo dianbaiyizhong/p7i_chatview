@@ -1,0 +1,11 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.zhenmei.p7i.chatview">
+
+
+    <application>
+        <activity
+            android:name="com.zhenmei.p7i.chatview.activity.ChatActivity"
+            android:exported="false"
+            android:theme="@style/ChatViewTheme" />
+    </application>
+</manifest>
