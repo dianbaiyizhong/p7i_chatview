@@ -1,10 +1,5 @@
 apply plugin: 'com.android.library'
 
-ext {
-    PUBLISH_GROUP_ID = 'cn.jiguang.imui'
-    PUBLISH_ARTIFACT_ID = 'messagelist'
-    PUBLISH_VERSION = '0.8.0'
-}
 
 android {
     compileSdkVersion 28
@@ -30,4 +25,3 @@ dependencies {
     implementation rootProject.ext.dependencies["material"]
 }
 
-apply from: 'android-release-aar.gradle'
