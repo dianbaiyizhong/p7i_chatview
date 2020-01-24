@@ -25,10 +25,12 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 
 import com.alibaba.fastjson.JSON;
 import com.blankj.utilcode.util.BarUtils;
+import com.blankj.utilcode.util.ClickUtils;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.RequestOptions;
 import com.bumptech.glide.request.target.SimpleTarget;
 import com.bumptech.glide.request.transition.Transition;
+import com.google.android.material.appbar.MaterialToolbar;
 import com.orhanobut.logger.Logger;
 import com.scwang.smartrefresh.layout.api.RefreshLayout;
 import com.scwang.smartrefresh.layout.listener.OnRefreshListener;
@@ -110,6 +112,7 @@ public class ChatActivity extends AppCompatActivity implements View.OnTouchListe
     private ArrayList<String> mMsgIdList = new ArrayList<>();
     private InputMethodManager mImm;
 
+    private MaterialToolbar toolBar;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -128,6 +131,13 @@ public class ChatActivity extends AppCompatActivity implements View.OnTouchListe
 
 
     private void initView() {
+        toolBar = findViewById(R.id.toolBar);
+        toolBar.setNavigationOnClickListener(new ClickUtils.OnDebouncingClickListener() {
+            @Override
+            public void onDebouncingClick(View v) {
+                finish();
+            }
+        });
         mChatView = findViewById(R.id.chat_view);
         mChatView.initModule();
         this.mImm = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
