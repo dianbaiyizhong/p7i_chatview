@@ -34,5 +34,8 @@ dependencies {
     implementation rootProject.ext.dependencies["material"]
 
     implementation project(":chatviewlibrary")
+    implementation project(":aurora_imui_chatinput")
+    implementation project(":aurora_imui_messagelist")
+    implementation project(':leancloudchatkit')
 
 }

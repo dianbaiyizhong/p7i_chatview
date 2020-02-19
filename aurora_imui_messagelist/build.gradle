@@ -1,6 +1,16 @@
 apply plugin: 'com.android.library'
 
-
+apply plugin: 'maven'
+uploadArchives {
+    repositories {
+        mavenDeployer {
+            pom.artifactId = 'aurora_imui_messagelist'
+            pom.groupId = 'cn.jiguang.imui'
+            repository(url: 'file:///D:/p7i-android-library')
+            pom.version = "1.0.0"
+        }
+    }
+}
 android {
     compileSdkVersion 28
     defaultConfig {

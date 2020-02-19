@@ -1,5 +1,15 @@
 apply plugin: 'com.android.library'
-
+apply plugin: 'maven'
+uploadArchives {
+    repositories {
+        mavenDeployer {
+            pom.artifactId = 'leancloudchatkit'
+            pom.groupId = 'cn.leancloud.chatkit'
+            repository(url: 'file:///D:/p7i-android-library')
+            pom.version = "1.0.0"
+        }
+    }
+}
 android {
     compileSdkVersion 28
     buildToolsVersion "28.0.3"
@@ -49,7 +59,6 @@ dependencies {
 
 //    implementation project(':p7i_ui')
 //    compileOnly project(':p7i_common')
-
 
 
 }

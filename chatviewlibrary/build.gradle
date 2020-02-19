@@ -1,5 +1,15 @@
 apply plugin: 'com.android.library'
-
+apply plugin: 'maven'
+uploadArchives {
+    repositories {
+        mavenDeployer {
+            pom.artifactId = 'chatview'
+            pom.groupId = 'com.zhenmei.p7i'
+            repository(url: 'file:///D:/p7i-android-library')
+            pom.version = "1.0.2"
+        }
+    }
+}
 android {
     compileSdkVersion 29
     buildToolsVersion "29.0.2"
@@ -31,9 +41,13 @@ dependencies {
     implementation rootProject.ext.dependencies["recyclerview"]
 
 
-    implementation project(":aurora_imui_chatinput")
-    implementation project(":aurora_imui_messagelist")
-    implementation project(':leancloudchatkit')
+    compileOnly project(":aurora_imui_chatinput")
+    compileOnly project(":aurora_imui_messagelist")
+    compileOnly project(':leancloudchatkit')
+//    compileOnly 'cn.jiguang.imui:aurora_imui_chatinput:1.0.0'
+//    compileOnly 'cn.jiguang.imui:aurora_imui_messagelist:1.0.0'
+//    compileOnly 'cn.leancloud.chatkit:leancloudchatkit:1.0.0'
+
     implementation('cn.leancloud:realtime-android:6.1.7') {
         exclude group: 'cn.leancloud', module: 'realtime-core'
     }
