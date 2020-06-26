@@ -6,7 +6,7 @@ uploadArchives {
             pom.artifactId = 'chatview'
             pom.groupId = 'com.zhenmei.p7i'
             repository(url: 'file:///D:/p7i-android-library')
-            pom.version = "1.0.2"
+            pom.version = "1.0.6"
         }
     }
 }
@@ -44,9 +44,7 @@ dependencies {
     compileOnly project(":aurora_imui_chatinput")
     compileOnly project(":aurora_imui_messagelist")
     compileOnly project(':leancloudchatkit')
-//    compileOnly 'cn.jiguang.imui:aurora_imui_chatinput:1.0.0'
-//    compileOnly 'cn.jiguang.imui:aurora_imui_messagelist:1.0.0'
-//    compileOnly 'cn.leancloud.chatkit:leancloudchatkit:1.0.0'
+
 
     implementation('cn.leancloud:realtime-android:6.1.7') {
         exclude group: 'cn.leancloud', module: 'realtime-core'
@@ -60,22 +58,23 @@ dependencies {
     implementation 'org.ligboy.retrofit2:converter-fastjson-android:2.1.0'
     implementation 'com.github.stuxuhai:jpinyin:1.0'
     implementation rootProject.ext.dependencies["eventbus"]
-    implementation rootProject.ext.dependencies["glide"]
 
 
-    implementation rootProject.ext.dependencies["SmartRefreshLayout"]
-    implementation rootProject.ext.dependencies["SmartRefreshHeader"]
+    compileOnly rootProject.ext.dependencies["glide"]
 
 
-    implementation rootProject.ext.dependencies["BaseRecyclerViewAdapterHelper"]
-    implementation rootProject.ext.dependencies["utilcodex"]
+    compileOnly rootProject.ext.dependencies["SmartRefreshLayout"]
+    compileOnly rootProject.ext.dependencies["SmartRefreshHeader"]
+
+
+    compileOnly rootProject.ext.dependencies["BaseRecyclerViewAdapterHelper"]
     implementation rootProject.ext.dependencies["logger"]
 
     //基础工具库
-    implementation rootProject.ext.dependencies["RxKit"]
+    compileOnly rootProject.ext.dependencies["RxKit"]
     //UI库
-    implementation rootProject.ext.dependencies["RxUI"]
+    compileOnly rootProject.ext.dependencies["RxUI"]
 
-    implementation rootProject.ext.dependencies["utilcodex"]
+    compileOnly rootProject.ext.dependencies["utilcodex"]
 
 }

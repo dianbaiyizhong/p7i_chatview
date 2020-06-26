@@ -1,24 +1,20 @@
 package cn.leancloud.chatkit.handler;
 
-import android.app.Notification;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.BitmapFactory;
-import android.util.Log;
 
 import androidx.core.app.NotificationCompat;
 
 import com.blankj.utilcode.util.NotificationUtils;
 import com.blankj.utilcode.util.Utils;
 
-import cn.leancloud.callback.AVCallback;
-import cn.leancloud.AVException;
-import cn.leancloud.im.v2.AVIMClient;
-import cn.leancloud.im.v2.AVIMConversation;
-import cn.leancloud.im.v2.AVIMTypedMessage;
-import cn.leancloud.im.v2.AVIMTypedMessageHandler;
-import cn.leancloud.im.v2.messages.AVIMTextMessage;
+import org.greenrobot.eventbus.EventBus;
 
+import java.util.Random;
+
+import cn.leancloud.AVException;
+import cn.leancloud.callback.AVCallback;
 import cn.leancloud.chatkit.LCChatKit;
 import cn.leancloud.chatkit.LCChatKitUser;
 import cn.leancloud.chatkit.R;
@@ -28,11 +24,11 @@ import cn.leancloud.chatkit.event.LCIMIMTypeMessageEvent;
 import cn.leancloud.chatkit.utils.LCIMConstants;
 import cn.leancloud.chatkit.utils.LCIMLogUtils;
 import cn.leancloud.chatkit.utils.LCIMNotificationUtils;
-
-import org.greenrobot.eventbus.EventBus;
-
-import java.util.Random;
-import java.util.UUID;
+import cn.leancloud.im.v2.AVIMClient;
+import cn.leancloud.im.v2.AVIMConversation;
+import cn.leancloud.im.v2.AVIMTypedMessage;
+import cn.leancloud.im.v2.AVIMTypedMessageHandler;
+import cn.leancloud.im.v2.messages.AVIMTextMessage;
 
 /**
  * Created by zhangxiaobo on 15/4/20.
@@ -107,17 +103,26 @@ public class LCIMMessageHandler extends AVIMTypedMessageHandler<AVIMTypedMessage
 //                        LCIMNotificationUtils.showNotification(context, title, notificationContent, null, intent);
                         Random rand = new Random();
                         int id = rand.nextInt(Integer.MAX_VALUE);
-                        NotificationUtils.notify("chat", id, new Utils.Func1<Void, NotificationCompat.Builder>() {
+//                        NotificationUtils.notify("chat", id, new Utils.Func1<Void, NotificationCompat.Builder>() {
+//                            @Override
+//                            public Void call(NotificationCompat.Builder param) {
+//                                param.setSmallIcon(R.mipmap.ic_notification_chat, 10000)
+//                                        .setLargeIcon(BitmapFactory.decodeResource(context.getResources(), R.mipmap.ic_notification_chat))
+//                                        .setContentTitle(title)
+//                                        .setContentText(notificationContent);
+//                                return null;
+//                            }
+//                        });
+
+                        NotificationUtils.notify("chat", id, new Utils.Consumer<NotificationCompat.Builder>() {
                             @Override
-                            public Void call(NotificationCompat.Builder param) {
-                                param.setSmallIcon(R.mipmap.ic_notification_chat, 10000)
+                            public void accept(NotificationCompat.Builder builder) {
+                                builder.setSmallIcon(R.mipmap.ic_notification_chat, 10000)
                                         .setLargeIcon(BitmapFactory.decodeResource(context.getResources(), R.mipmap.ic_notification_chat))
                                         .setContentTitle(title)
                                         .setContentText(notificationContent);
-                                return null;
                             }
                         });
-
                     }
                 }
             });

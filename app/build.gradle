@@ -38,4 +38,15 @@ dependencies {
     implementation project(":aurora_imui_messagelist")
     implementation project(':leancloudchatkit')
 
+
+    implementation rootProject.ext.dependencies["RxKit"]
+    implementation rootProject.ext.dependencies["RxUI"]
+    implementation rootProject.ext.dependencies["utilcodex"]
+    implementation rootProject.ext.dependencies["BaseRecyclerViewAdapterHelper"]
+
+
+    implementation rootProject.ext.dependencies["glide"]
+
+    implementation rootProject.ext.dependencies["SmartRefreshLayout"]
+    implementation rootProject.ext.dependencies["SmartRefreshHeader"]
 }

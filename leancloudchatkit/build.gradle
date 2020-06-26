@@ -6,7 +6,7 @@ uploadArchives {
             pom.artifactId = 'leancloudchatkit'
             pom.groupId = 'cn.leancloud.chatkit'
             repository(url: 'file:///D:/p7i-android-library')
-            pom.version = "1.0.0"
+            pom.version = "1.0.1"
         }
     }
 }

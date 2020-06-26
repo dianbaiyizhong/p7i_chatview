@@ -34,7 +34,7 @@ import com.google.android.material.appbar.MaterialToolbar;
 import com.orhanobut.logger.Logger;
 import com.scwang.smartrefresh.layout.api.RefreshLayout;
 import com.scwang.smartrefresh.layout.listener.OnRefreshListener;
-import com.vondear.rxui.view.dialog.RxDialogScaleView;
+import com.tamsiree.rxui.view.dialog.RxDialogScaleView;
 import com.zhenmei.p7i.chatview.R;
 import com.zhenmei.p7i.chatview.messages.BrowserImageActivity;
 import com.zhenmei.p7i.chatview.models.DefaultUser;
