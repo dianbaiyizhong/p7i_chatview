@@ -55,6 +55,7 @@ import java.util.List;
 import java.util.Locale;
 
 import cn.jiguang.imui.chatinput.ChatInputView;
+import cn.jiguang.imui.chatinput.emoji.Constants;
 import cn.jiguang.imui.chatinput.listener.OnMenuClickListener;
 import cn.jiguang.imui.chatinput.model.FileItem;
 import cn.jiguang.imui.chatinput.model.VideoItem;
@@ -85,6 +86,8 @@ import cn.leancloud.im.v2.callback.AVIMConversationCreatedCallback;
 import cn.leancloud.im.v2.callback.AVIMMessagesQueryCallback;
 import cn.leancloud.im.v2.messages.AVIMImageMessage;
 import cn.leancloud.im.v2.messages.AVIMTextMessage;
+import pub.devrel.easypermissions.AfterPermissionGranted;
+import pub.devrel.easypermissions.EasyPermissions;
 
 public class ChatActivity extends AppCompatActivity implements View.OnTouchListener {
     private final int ITEM_LEFT = 100;
@@ -251,16 +254,15 @@ public class ChatActivity extends AppCompatActivity implements View.OnTouchListe
             @Override
             public boolean switchToGalleryMode() {
                 scrollToBottom();
+                mChatView.setMsgListHeight(false);
                 String[] perms = new String[]{
                         Manifest.permission.READ_EXTERNAL_STORAGE
                 };
-
-//                if (!EasyPermissions.hasPermissions(MessageListActivity.this, perms)) {
-//                    EasyPermissions.requestPermissions(MessageListActivity.this,
-//                            getResources().getString(R.string.rationale_photo),
-//                            RC_PHOTO, perms);
-//                }
-                // If you call updateData, select photo view will try to update data(Last update over 30 seconds.)
+                if (!EasyPermissions.hasPermissions(getApplicationContext(), perms)) {
+                    EasyPermissions.requestPermissions(ChatActivity.this,
+                            "需要获取相册存储权限",
+                            123, perms);
+                }
                 mChatView.getChatInputView().getSelectPhotoView().updateData();
                 return true;
             }
@@ -290,6 +292,7 @@ public class ChatActivity extends AppCompatActivity implements View.OnTouchListe
 
             @Override
             public boolean switchToEmojiMode() {
+                mChatView.setMsgListHeight(false);
                 scrollToBottom();
                 return true;
             }

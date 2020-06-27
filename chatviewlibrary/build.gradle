@@ -6,7 +6,7 @@ uploadArchives {
             pom.artifactId = 'chatview'
             pom.groupId = 'com.zhenmei.p7i'
             repository(url: 'file:///D:/p7i-android-library')
-            pom.version = "1.0.6"
+            pom.version = "1.0.8"
         }
     }
 }
@@ -45,17 +45,13 @@ dependencies {
     compileOnly project(":aurora_imui_messagelist")
     compileOnly project(':leancloudchatkit')
 
-
-    implementation('cn.leancloud:realtime-android:6.1.7') {
+    implementation('cn.leancloud:realtime-android:6.5.7') {
         exclude group: 'cn.leancloud', module: 'realtime-core'
     }
-    implementation('cn.leancloud:realtime-core:6.1.7') {
-        exclude group: 'com.alibaba', module: 'fastjson'
-        exclude group: 'org.ligboy.retrofit2', module: 'converter-fastjson'
-    }
+    implementation('cn.leancloud:realtime-core:6.5.7')
+
     implementation rootProject.ext.dependencies["rxandroid"]
     implementation rootProject.ext.dependencies["fastjson"]
-    implementation 'org.ligboy.retrofit2:converter-fastjson-android:2.1.0'
     implementation 'com.github.stuxuhai:jpinyin:1.0'
     implementation rootProject.ext.dependencies["eventbus"]
 
@@ -76,5 +72,8 @@ dependencies {
     compileOnly rootProject.ext.dependencies["RxUI"]
 
     compileOnly rootProject.ext.dependencies["utilcodex"]
+
+
+    implementation 'pub.devrel:easypermissions:3.0.0'
 
 }

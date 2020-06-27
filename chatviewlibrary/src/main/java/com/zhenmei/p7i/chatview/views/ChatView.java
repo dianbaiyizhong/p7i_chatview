@@ -70,7 +70,7 @@ public class ChatView extends RelativeLayout {
         mChatInput = (ChatInputView) findViewById(R.id.chat_input);
         refreshLayout = (RefreshLayout) findViewById(R.id.pull_to_refresh_layout);
         refreshLayout.setEnableAutoLoadMore(false);
-
+        refreshLayout.setEnableLoadMore(false);
 
         chat_view_container = (LinearLayout) findViewById(R.id.chat_view_container);
         /**
@@ -210,19 +210,19 @@ public class ChatView extends RelativeLayout {
             if (height > 0) {
                 layoutParams.height = mChatInput.getSoftKeyboardHeight();
                 mMsgList.setLayoutParams(layoutParams);
-                //  setMarginBottom();
+//                setMarginBottom();
 
             } else {
-                // setMarginBottom();
+//                setMarginBottom();
 
             }
         } else {
-//            ViewGroup.LayoutParams layoutParams = mMsgList.getLayoutParams();
-//            layoutParams.height = mMsgList.getMaxHeight();
+            ViewGroup.LayoutParams layoutParams = mMsgList.getLayoutParams();
+            layoutParams.height = mMsgList.getMaxHeight();
 //            Log.d("ChatView", "set MessageList height, height = " + layoutParams.height);
-//            mMsgList.setLayoutParams(layoutParams);
+            mMsgList.setLayoutParams(layoutParams);
 
-            //setMarginBottom();
+//            setMarginBottom();
         }
     }
 

@@ -6,7 +6,7 @@ uploadArchives {
             pom.artifactId = 'leancloudchatkit'
             pom.groupId = 'cn.leancloud.chatkit'
             repository(url: 'file:///D:/p7i-android-library')
-            pom.version = "1.0.1"
+            pom.version = "1.0.2"
         }
     }
 }
@@ -36,16 +36,12 @@ dependencies {
 
 //    implementation fileTree(dir: "libs", include: ["*.jar"])
 
-    api('cn.leancloud:realtime-android:6.1.7') {
+    api('cn.leancloud:realtime-android:6.5.7') {
         exclude group: 'cn.leancloud', module: 'realtime-core'
     }
-    api('cn.leancloud:realtime-core:6.1.7') {
-        exclude group: 'com.alibaba', module: 'fastjson'
-        exclude group: 'org.ligboy.retrofit2', module: 'converter-fastjson'
-    }
+    api('cn.leancloud:realtime-core:6.5.7')
     implementation rootProject.ext.dependencies["rxandroid"]
     implementation rootProject.ext.dependencies["fastjson"]
-    implementation 'org.ligboy.retrofit2:converter-fastjson-android:2.1.0'
 
     implementation rootProject.ext.dependencies["recyclerview"]
     implementation 'com.github.stuxuhai:jpinyin:1.0'

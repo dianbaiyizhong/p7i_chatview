@@ -75,6 +75,7 @@ public class PhotoAdapter extends RecyclerView.Adapter<PhotoAdapter.PhotoViewHol
             holder.container.setLayoutParams(layoutParams);
         }
 
+
         FileItem item = mMedias.get(position);
         Glide.with(mContext)
                 .load(item.getFilePath())
