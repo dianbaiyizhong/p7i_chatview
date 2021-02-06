@@ -6,7 +6,7 @@ uploadArchives {
         mavenDeployer {
             pom.artifactId = 'aurora_imui_messagelist'
             pom.groupId = 'cn.jiguang.imui'
-            repository(url: 'file:///D:/p7i-android-library')
+            repository(url: mavenLocal().getUrl())
             pom.version = "1.0.1"
         }
     }

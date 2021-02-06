@@ -5,7 +5,7 @@ uploadArchives {
         mavenDeployer {
             pom.artifactId = 'leancloudchatkit'
             pom.groupId = 'cn.leancloud.chatkit'
-            repository(url: 'file:///D:/p7i-android-library')
+            repository(url: mavenLocal().getUrl())
             pom.version = "1.0.2"
         }
     }
