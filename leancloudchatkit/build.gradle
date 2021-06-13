@@ -11,12 +11,12 @@ uploadArchives {
     }
 }
 android {
-    compileSdkVersion 28
-    buildToolsVersion "28.0.3"
+    compileSdkVersion 30
+    buildToolsVersion "30.0.3"
 
     defaultConfig {
-        minSdkVersion 14
-        targetSdkVersion 26
+        minSdkVersion 21
+        targetSdkVersion 30
         versionCode 1
         versionName "1.0"
         vectorDrawables.useSupportLibrary = true
@@ -40,7 +40,7 @@ dependencies {
         exclude group: 'cn.leancloud', module: 'realtime-core'
     }
     api('cn.leancloud:realtime-core:6.5.7')
-    implementation rootProject.ext.dependencies["rxandroid"]
+    implementation 'io.reactivex.rxjava3:rxandroid:3.0.0'
     implementation rootProject.ext.dependencies["fastjson"]
 
     implementation rootProject.ext.dependencies["recyclerview"]

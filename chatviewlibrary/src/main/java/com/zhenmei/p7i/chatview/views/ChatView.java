@@ -12,7 +12,8 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.google.android.material.appbar.MaterialToolbar;
 import com.orhanobut.logger.Logger;
-import com.scwang.smartrefresh.layout.api.RefreshLayout;
+import com.scwang.smart.refresh.layout.api.RefreshLayout;
+
 import com.zhenmei.p7i.chatview.R;
 
 import cn.jiguang.imui.chatinput.ChatInputView;

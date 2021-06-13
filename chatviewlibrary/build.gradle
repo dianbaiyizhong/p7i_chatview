@@ -11,13 +11,12 @@ uploadArchives {
     }
 }
 android {
-    compileSdkVersion 29
-    buildToolsVersion "29.0.2"
-
+    compileSdkVersion 30
+    buildToolsVersion "30.0.3"
 
     defaultConfig {
         minSdkVersion 21
-        targetSdkVersion 29
+        targetSdkVersion 30
         versionCode 1
         versionName "1.0"
 
@@ -50,7 +49,7 @@ dependencies {
     }
     implementation('cn.leancloud:realtime-core:6.5.7')
 
-    implementation rootProject.ext.dependencies["rxandroid"]
+    implementation ('io.reactivex.rxjava3:rxandroid:3.0.0')
     implementation rootProject.ext.dependencies["fastjson"]
     implementation 'com.github.stuxuhai:jpinyin:1.0'
     implementation rootProject.ext.dependencies["eventbus"]

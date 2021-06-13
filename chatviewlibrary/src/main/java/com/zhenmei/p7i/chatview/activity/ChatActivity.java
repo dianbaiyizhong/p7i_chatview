@@ -32,8 +32,9 @@ import com.bumptech.glide.request.target.SimpleTarget;
 import com.bumptech.glide.request.transition.Transition;
 import com.google.android.material.appbar.MaterialToolbar;
 import com.orhanobut.logger.Logger;
-import com.scwang.smartrefresh.layout.api.RefreshLayout;
-import com.scwang.smartrefresh.layout.listener.OnRefreshListener;
+
+import com.scwang.smart.refresh.layout.api.RefreshLayout;
+import com.scwang.smart.refresh.layout.listener.OnRefreshListener;
 import com.tamsiree.rxui.view.dialog.RxDialogScaleView;
 import com.zhenmei.p7i.chatview.R;
 import com.zhenmei.p7i.chatview.messages.BrowserImageActivity;

@@ -25,7 +25,7 @@
             app:title=""
             app:titleTextColor="@android:color/black" />
 
-        <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        <com.scwang.smart.refresh.layout.SmartRefreshLayout
             android:id="@+id/pull_to_refresh_layout"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -36,7 +36,7 @@
             app:srlEnablePreviewInEditMode="false"
             app:srlPrimaryColor="?android:attr/colorPrimary">
 
-            <com.scwang.smartrefresh.header.MaterialHeader
+            <com.scwang.smart.refresh.header.MaterialHeader
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
 
@@ -60,7 +60,7 @@
                 app:showReceiverDisplayName="true"
                 app:showSenderDisplayName="false" />
 
-        </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+        </com.scwang.smart.refresh.layout.SmartRefreshLayout>
 
 
     </LinearLayout>
